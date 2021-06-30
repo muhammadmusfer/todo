@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <script>
+       
+       var close = document.getElementsByClassName("close");
+   
+       function myfun(){
+           
+        var myvar = document.getElementById("demo").value;
+        var t = document.createTextNode(myvar);
+        var listItem = document.createElement('li');
+        listItem.appendChild(t);
+        document.getElementById("demo1").appendChild(listItem);
+
+        document.getElementById("demo").value='';
+        var button = document.createElement("button");
+        var txt = document.createTextNode("\u00D7");
+        button.className = "close";
+        button.appendChild(txt);
+        listItem.appendChild(button);
+
+        for (i = 0; i < close.length; i++) {
+             close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+        }
+
+          
+       }
+    }
+
+   </script>
+</head>    
+<body>
+
+    <h2>Todo App</h2>
+    <tr>
+        <th><input type="text" placeholder="Add Your new Todo" id="demo"></th>
+        <th><button onclick="myfun()">+</button></th>
+    </tr>
+    <ul id="demo1"></ul>
+    
+</body>
+</html>

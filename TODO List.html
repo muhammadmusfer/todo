@@ -6,15 +6,21 @@
 </head>    
 <body>
 <div id="main">
-    
-    <h2 id="heading">Todo App</h2>
+    <div id="header">
+    <h1 id="heading">Todo App</h1>
+    <div id="addInput">
     <tr>
         <th><input type="text" placeholder="Add Your new Todo" id="inputField"></th>
         <th><button onclick="myfun()" id="addButton">+</button></th>
     </tr>
+    <tr><Button id ="delAll" onclick="delAll()">Clear All</Button></tr>
+    </div>
+    </div>
     <div class="listDiv">
     <ul id="list"></ul>
     </div>
+    
+
 </div>    
 </body>
 </html>

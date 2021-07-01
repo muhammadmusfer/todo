@@ -2,6 +2,10 @@
 function myfun(){
            
     var myvar = document.getElementById("inputField").value;
+    if(myvar==""||myvar.trim().length==0){
+        alert("Enter message");
+        return;
+    }
     var t = document.createTextNode(myvar);
     var listItem = document.createElement('li');
     listItem.appendChild(t);
@@ -17,12 +21,15 @@ function myfun(){
     button.className = "close";
     button.appendChild(txt);
     listItem.appendChild(button);
-    var close = document.getElementsByClassName("close");
-    for (i = 0; i < close.length; i++) {
-         close[i].onclick = function() {
+    
+    //after this line is my new code
+    button.onclick = function() {
         var div = this.parentElement;
         div.parentNode.removeChild(div);
     }
-      
-   }
+    
+}
+
+function delAll(){
+    document.getElementById('list').innerHTML='';
 }

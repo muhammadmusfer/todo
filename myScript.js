@@ -18,13 +18,14 @@ function myfun(){
     var button = document.createElement("button");
     var txt = document.createTextNode("DEL");
    
-    button.className = "close";
+    button.className = "del";
     button.appendChild(txt);
     listItem.appendChild(button);
     
     //after this line is my new code
     button.onclick = function() {
         var div = this.parentElement;
+        console.log(div);
         div.parentNode.removeChild(div);
     }
     

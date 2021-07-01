@@ -50,12 +50,12 @@
     margin-left: 5%;
 }
 
-.close:hover {
+.del:hover {
     background-color: peru;
     color: white;
   }
 
-.close{
+.del{
     position:absolute;
     width: 10%;
     Height: 100%;
@@ -63,6 +63,7 @@
     Top:0;
     font-size: 60%;
     background-color: lavender;
+    cursor: pointer;
 }
 
 .listItem{

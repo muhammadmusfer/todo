@@ -22,7 +22,7 @@ function myfun(i){
     listItem.appendChild(button);
     
     //after this line is my new code
-    button.onclick = function() {
+    button.onclick = () => {
         var div = this.parentElement;
         console.log(div);
         div.parentNode.removeChild(div);
@@ -49,10 +49,18 @@ function back(){
 }
 
 function addAll(){
+    var var1 = document.getElementById("inputField1").value;
+    var var2 = document.getElementById("inputField2").value;
+    var var3 = document.getElementById("inputField3").value;
+    
+    if(!((var1==""||var1.trim().length==0)&&(var2==""||var2.trim().length==0)&&(var3==""||var3.trim().length==0))){
     for(i=1;i<=3;i++){
         myfun(i);  
     }
     document.getElementById("secondScreen").style.display="none";
     document.getElementById("mainScreen").style.display="block";
-    
+    }
+    else{
+        alert("Enter values");
+    }   
 }

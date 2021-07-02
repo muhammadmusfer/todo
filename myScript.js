@@ -22,7 +22,7 @@ function myfun(i){
     listItem.appendChild(button);
     
     //after this line is my new code
-    button.onclick = () => {
+    button.onclick =function(){
         var div = this.parentElement;
         console.log(div);
         div.parentNode.removeChild(div);

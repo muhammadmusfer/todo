@@ -5,7 +5,11 @@
     border: 4px solid brown;
     border-radius: 8px;
     background-color:ghostwhite;
-    overflow:auto;
+}
+
+#mainScreen{
+    width:100%;
+    height:100%;
 }
 
 #heading{
@@ -15,7 +19,7 @@
     padding-left: 10%;
 }
 
-#inputField{
+#inputField0{
     width:75%;
     height: 10%;
     border-radius: 8px;
@@ -84,9 +88,11 @@
     background-color:lightblue;
 }
 
-.listDiv{
+#listDiv{
     padding:2%;
-    
+    height: 40%;
+    overflow: auto;
+  
 }
 
 #header{
@@ -98,7 +104,79 @@
     margin:2%;
     border-radius: 15px;
     background-color: skyblue;
+    margin-left: 10%;
 }
 #delAll:hover{
     background-color: darkgoldenrod;
+}
+#addMul{
+    padding:2%;
+    margin:2%;
+    border-radius: 15px;
+    background-color: skyblue;
+    margin-left:30%;
+}
+#addMul:hover{
+    background-color:darksalmon;
+}
+
+#inputField1{
+    margin: 3%;
+    width:85%;
+    height: 25%;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 2%;
+    
+}
+
+#inputField2{
+    margin: 3%;
+    width:85%;
+    height: 25%;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 2%;
+    
+}
+
+#inputField3{
+    margin: 3%;
+    width:85%;
+    height: 25%;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 2%;
+    
+}
+
+#mulInputs{
+    padding:2%;
+    margin:2%;
+    border-radius: 5px;
+    background-color: skyblue;
+    margin-left: 30%;
+    margin-top: 20%;
+    font-weight: bold;
+    cursor:pointer;
+
+}
+
+#mulInputs:hover{
+    background-color:pink;
+}
+
+#back{
+    padding:2%;
+    margin:2%;
+    border-radius: 5px;
+    background-color: skyblue;
+    margin-left: 10%;
+    margin-top: 20%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#back:hover{
+    background-color:pink;
 }

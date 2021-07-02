@@ -1,9 +1,8 @@
 
-function myfun(){
+function myfun(i){
            
-    var myvar = document.getElementById("inputField").value;
+    var myvar = document.getElementById(`inputField${i}`).value;
     if(myvar==""||myvar.trim().length==0){
-        alert("Enter message");
         return;
     }
     var t = document.createTextNode(myvar);
@@ -14,7 +13,7 @@ function myfun(){
 
     document.getElementById("list").appendChild(listItem);
 
-    document.getElementById("inputField").value='';
+    document.getElementById(`inputField${i}`).value='';
     var button = document.createElement("button");
     var txt = document.createTextNode("DEL");
    
@@ -33,4 +32,27 @@ function myfun(){
 
 function delAll(){
     document.getElementById('list').innerHTML='';
+}
+
+function switchScreen(){
+    document.getElementById("mainScreen").style.display="none";
+    document.getElementById("inputField0").value='';
+    document.getElementById("secondScreen").style.display="block";
+}
+
+function back(){
+    document.getElementById("secondScreen").style.display="none";
+    document.getElementById("mainScreen").style.display="block";
+    document.getElementById("inputField1").value='';
+    document.getElementById("inputField2").value='';
+    document.getElementById("inputField3").value='';
+}
+
+function addAll(){
+    for(i=1;i<=3;i++){
+        myfun(i);  
+    }
+    document.getElementById("secondScreen").style.display="none";
+    document.getElementById("mainScreen").style.display="block";
+    
 }

@@ -12,3 +12,5 @@ we remove our task on press delete button
 We Add multiple task and clear list of task.
 
 Font library I use in this "Font Awesome".
+
+<h2>Netlify link: "https://epic-kare-c8f983.netlify.app/"</h2>

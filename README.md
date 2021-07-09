@@ -3,11 +3,11 @@ This is basic todo app
  This is basic Todo-App which have basic functionalities.
  we add our task by click add button.
 
-![](images/tododom1.PNG)
+![](Images/tododom1.PNG)
 
 we remove our task on press delete button
 
-![](images/tododom2.png)
+![](Images/tododom2.PNG)
 
 We Add multiple task and clear list of task.
 

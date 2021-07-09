@@ -1,182 +1,259 @@
 #main{
-    margin: auto;
-    width: 40%;
-    height:500px;
-    border: 4px solid brown;
-    border-radius: 8px;
-    background-color:ghostwhite;
-}
+    width:55%;
+    height:90%;
+    border: 5px solid;
+    border-color: #aab5d1;
+    margin-left:20%;
+    margin-top:3%;
+    background-color: #edf3f3;
 
-#mainScreen{
-    width:100%;
-    height:100%;
-}
 
-#heading{
-    color: green;
-    font-size: 3em;
-    font-family:'Lucida Sans';
-    padding-left: 10%;
 }
-
-#inputField0{
-    width:75%;
-    height: 10%;
-    border-radius: 8px;
-    font-size: 20px;
-    padding: 2%;
-    
+#inputField{
+    width:90%;
+    margin-top:2%;
+    margin-left: 2%;
+    margin-bottom: 4%;
+    height: 12%;
+    border-radius: 3px;
+    padding:3%;
+    background-color: #58c8ad;
+    color:white;
+    font-size : large;
+    border:none;
+    font-family: sans-serif;
+}
+#inputField:focus{
+    outline:none;
 }
 
 #addButton{
-    background-color:steelblue;
-    color:whitesmoke;
-    height: 10%;
-    width: 10%;
-    border-radius: 20px;
-    font-size: 20px;
-    padding: 1%;
-}
-
-#addButton:hover{
-    background-color: chocolate;
-}
-
-#list{
-    background-color: #ff9999;
-    list-style-type: none;
-    position:relative;
-    padding: 0px;
-    margin: 0px;
-}
-
-#addInput{
-    margin-left: 5%;
-}
-
-.del:hover {
-    background-color: peru;
-    color: white;
-  }
-
-.del{
-    position:absolute;
-    width: 10%;
-    Height: 100%;
-    right:0;
-    Top:0;
-    font-size: 60%;
-    background-color: lavender;
     cursor: pointer;
+    background-color:whitesmoke;
+    color:teal;
+    font-size:25px;
+    width: 12%;
+    height: 12%;
+    border-radius: 50%;
+    margin-left: -8%;
+    margin-top: 3%;
+    border:none;
+    position: inline;
+    padding:1%
+}
+
+::placeholder{
+    color:fdfdfd;
+}
+
+
+
+#header-div{
+    background-color: #52ba9a;
+    border-radius: 0 0 7px 7px;
 }
 
 .listItem{
-      cursor: pointer;
-      background-color: #eee;
-      font-size: 20px;
-      padding: 10px 8px 10px 8px;
-      position:relative;
-      left:0;
-     
-  }
-
-.text{
-    overflow:hidden;
-}
-
-.listItem:nth-child(odd){
-    background-color:lightblue;
-}
-
-#listDiv{
-    padding:2%;
-    height: 40%;
-    overflow: auto;
-  
-}
-
-#header{
-    background-color:wheat;
-}
-
-#delAll{
-    padding:2%;
+    background-color: white;
+    font-size: medium;
+    padding: 10px 8px 10px 18px;
     margin:2%;
-    border-radius: 15px;
-    background-color: skyblue;
-    margin-left: 10%;
-}
-#delAll:hover{
-    background-color: darkgoldenrod;
-}
-#addMul{
-    padding:2%;
-    margin:2%;
-    border-radius: 15px;
-    background-color: skyblue;
-    margin-left:30%;
-}
-#addMul:hover{
-    background-color:darksalmon;
+    position:relative;
+    border-radius: 3px;
+    left:0;
+    font-family: sans-serif;
+    height: 35px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    line-height: 35px;
+        
 }
 
-#inputField1{
-    margin: 3%;
-    width:85%;
-    height: 25%;
-    border-radius: 8px;
-    font-size: 20px;
-    padding: 2%;
+.donelistItem{
+    background-color: white;
+    font-size: xx-large;
+    padding: 10px 8px 10px 8px;
+    margin:2%;
+    position:relative;
     
+    border-radius: 10px;
+    left:0;
+    font-family: sans-serif;
+   
 }
-
-#inputField2{
-    margin: 3%;
-    width:85%;
-    height: 25%;
-    border-radius: 8px;
-    font-size: 20px;
-    padding: 2%;
-    
+.delBtn:hover{
+    color:red;
 }
-
-#inputField3{
-    margin: 3%;
-    width:85%;
-    height: 25%;
-    border-radius: 8px;
-    font-size: 20px;
-    padding: 2%;
-    
-}
-
-#mulInputs{
-    padding:2%;
-    margin:2%;
-    border-radius: 5px;
-    background-color: skyblue;
-    margin-left: 30%;
-    margin-top: 10%;
-    font-weight: bold;
-    cursor:pointer;
-
-}
-
-#mulInputs:hover{
-    background-color:pink;
-}
-
-#back{
-    padding:2%;
-    margin:2%;
-    border-radius: 5px;
-    background-color: skyblue;
-    margin-left: 10%;
-    margin-top: 10%;
-    font-weight: bold;
+.delbtn{
     cursor: pointer;
+    border-radius: 50%;
+    position:absolute;
+    right:2%;
+    height:70%;
+    border:none;
+    font-size: x-large;
+    color:#bfcdcb;
+    background-color: white;
+    
+}
+.cmpltbtn{
+    cursor: pointer;
+    border-radius: 50%;
+    position:absolute;
+    right:10%;
+    height:75%;
+    border:none;
+    font-size: x-large;
+    background-color: white;
+    color:#bfcdcb;
+    
 }
 
-#back:hover{
-    background-color:pink;
+.cmpltdbtn{
+    cursor:pointer;
+    border-radius: 50%;
+    position:absolute;
+    right:10%;
+    height:75%;
+    border:none;
+    font-size: x-large;
+    background-color: white;
+}
+
+
+#tasklist{
+    background-color:#edf3f3;
+    list-style-type: none;
+    position:relative;
+    padding: 2px;
+    margin: 0px;
+}
+
+#donelist{
+    background-color:#edf3f3;
+    list-style-type: none;
+    position:relative;
+    padding: 2px;
+    margin: 0px;
+}
+
+.fa.fa-check{
+    color:black;
+    background-color: white;
+}
+
+.fa.fa-check-circle{
+    color:teal;
+}
+
+.fa.fa-check:hover{
+    color:teal;
+}
+
+#listItemDiv{
+    height:35%;
+    overflow:auto;
+    
+}
+
+#donelistDiv{
+    height:35%;
+    overflow:auto;
+}
+
+#divider{
+    color: teal;
+    width:50%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+@media screen and (max-width: 900px){
+    #inputField{
+        width:89%;
+        margin-top:3%;
+        margin-left: 3%;
+        margin-bottom: 3%;
+        height: 8%;
+        padding:3%;
+        
+        font-size : large;
+    }
+    #addButton{
+        cursor: pointer;
+        background-color:whitesmoke;
+        color:teal;
+        font-size:20px;
+        font-weight: 300;
+        width: 12%;
+        height: 8%;
+        border-radius: 50%;
+        margin-left: -7%;
+        margin-top: 2%;
+
+        border:none;
+        position: inline;
+    }
+
+    .listItem{
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);;
+        background-color: white;
+        font-size: medium;
+        padding: 10px 8px 10px 18px;
+        margin:2%;
+        position:relative;
+        border-radius: 3px;
+        left:0;
+        font-family: sans-serif;
+        height:30px;
+        align-items: center;
+        line-height: 32px;
+       
+    }
+    .donelistItem{
+        background-color: white;
+        font-size:large;
+        padding: 10px 8px 10px 8px;
+        margin:2%;
+        position:relative;
+        
+        border-radius: 10px;
+        left:0;
+        font-family: sans-serif;
+       
+    }
+    .cmpltdbtn{
+        font-size: x-large;
+    }
+    .cmpltbtn{
+        font-size: x-large;
+    }
+    .delbtn{
+        font-size: x-large;
+    }
+}
+
+@media screen and (max-width: 600px){
+    
+    #inputField{
+    font-size: small;
+    }
+    #addButton{
+        font-size: 10px;
+    }
+    .listItem{
+        font-size: small;
+    }
+    .donelistItem{
+        font-size: small;
+    }
+    
+    .cmpltdbtn{
+        font-size: large;
+    }
+    .cmpltbtn{
+        font-size: large;
+    }
+    .delbtn{
+        font-size: large;
+    }
 }

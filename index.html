@@ -1,47 +1,29 @@
-<!DOCTYPE html>
 <html>
-<head>
-   <script src="./myScript.js"></script>
-   <link rel="stylesheet" href="Style.css">
-</head>    
-<body>
-    
-<div id="main">
-<div id="mainScreen">    
-    <div id="header">
-        <h1 id="heading">Todo App</h1>
-        <div id="addInput">
-            <tr>
-            <th><input type="text" placeholder="Add Your new Todo" id="inputField0"></th>
-            <th><button onclick="myfun(0)" id="addButton">+</button></th>
-            </tr>
-            <tr>
-            <th><Button id ="delAll" onclick="delAll()">Clear All</Button></th>
-            <th><Button id ="addMul" onclick="switchScreen()">ADD Multiple</Button></th>
-            </tr>
+    <head>
+        <script src="./myScript.js"></script>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="main">
+        <div id="header-div">    
+        <input type="text" placeholder="Enter an activity..." id="inputField"/>
+        <button id="addButton" onclick="addItem()"><i class="fa fa-plus"></i></button>
         </div>
+
+        <div id="listItemDiv">
+        <ul id="tasklist"></ul>
+        </div>
+
+
+        <hr id="divider" class="solid">
+        
+        <div id="donelistDiv">
+        <ul id="donelist"></ul>
+        </div>
+        
+        
     </div>
-    
-    <div id="listDiv">
-        <ul id="list"></ul>
-    </div>
-    
-
-</div>
-
-
-<div id="secondScreen" style="display: none;">
-    <input type="text" placeholder="Enter Your First Task..." id="inputField1">
-    <input type="text" placeholder="Enter Your Second Task..." id="inputField2">
-    <input type="text" placeholder="Enter Your Third Task..." id="inputField3">
-
-    <tr>
-        <th><button id="mulInputs" onClick="addAll()">ADD All</button></th>
-        <th><button id="back" onclick="back()">Back</button></th>
-    </tr>
-    
-</div>
-
-</div>
-</body>
+        
+    </body>
 </html>

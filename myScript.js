@@ -1,66 +1,56 @@
-
-function myfun(i){
-           
-    var myvar = document.getElementById(`inputField${i}`).value;
+function addItem(){
+    
+    var myvar = document.getElementById("inputField").value;
     if(myvar==""||myvar.trim().length==0){
         return;
     }
-    var t = document.createTextNode(myvar);
+    var text = document.createTextNode(myvar);
     var listItem = document.createElement('li');
-    listItem.appendChild(t);
-    t.className="text";
+    listItem.appendChild(text);
+    text.className="text";
     listItem.className="listItem";
 
-    document.getElementById("list").appendChild(listItem);
+    document.getElementById("tasklist").appendChild(listItem);
 
-    document.getElementById(`inputField${i}`).value='';
-    var button = document.createElement("button");
-    var txt = document.createTextNode("DEL");
-   
-    button.className = "del";
-    button.appendChild(txt);
-    listItem.appendChild(button);
+    document.getElementById("inputField").value='';
+
+    var delbtn = document.createElement("button");
+    var icon = document.createElement("i");
+    delbtn.className="delbtn";
+    icon.className = "fa fa-trash";
+    delbtn.appendChild(icon);
+    listItem.appendChild(delbtn);
+    var divider = document.createElement("vl");
+    divider.className="divider";
+    listItem.appendChild(divider);
+    var completebtn = document.createElement("button");
+    completebtn.className = "cmpltbtn";
+    var icon2 = document.createElement("i");
+    icon2.className="fa fa-check";
+    completebtn.appendChild(icon2);
+    listItem.appendChild(completebtn);     
+
     
-    //after this line is my new code
-    button.onclick =function(){
+    delbtn.onclick =function(){
         var div = this.parentElement;
-        console.log(div);
         div.parentNode.removeChild(div);
     }
-    
-}
 
-function delAll(){
-    document.getElementById('list').innerHTML='';
-}
+    completebtn.onclick = function(){
+        var list = this.parentElement;
+        list.parentNode.removeChild(list);
+        
+        var doneli = document.createElement('li');
+        doneli.appendChild(text);
+        document.getElementById("donelist").appendChild(doneli);
+        doneli.className = "listItem";
+        doneli.appendChild(delbtn);
 
-function switchScreen(){
-    document.getElementById("mainScreen").style.display="none";
-    document.getElementById("inputField0").value='';
-    document.getElementById("secondScreen").style.display="block";
-}
-
-function back(){
-    document.getElementById("secondScreen").style.display="none";
-    document.getElementById("mainScreen").style.display="block";
-    document.getElementById("inputField1").value='';
-    document.getElementById("inputField2").value='';
-    document.getElementById("inputField3").value='';
-}
-
-function addAll(){
-    var var1 = document.getElementById("inputField1").value;
-    var var2 = document.getElementById("inputField2").value;
-    var var3 = document.getElementById("inputField3").value;
-    
-    if(!((var1==""||var1.trim().length==0)&&(var2==""||var2.trim().length==0)&&(var3==""||var3.trim().length==0))){
-    for(i=1;i<=3;i++){
-        myfun(i);  
+        var completedbtn = document.createElement("button");
+        completedbtn.className = "cmpltdbtn";
+        var icon3 = document.createElement("i");
+        icon3.className="fa fa-check-circle";
+        completedbtn.appendChild(icon3);
+        doneli.appendChild(completedbtn);
     }
-    document.getElementById("secondScreen").style.display="none";
-    document.getElementById("mainScreen").style.display="block";
-    }
-    else{
-        alert("Enter values");
-    }   
 }

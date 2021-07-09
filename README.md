@@ -5,5 +5,9 @@
 ![](images/todopic1.PNG)
 
 we remove our task on press delete button
-we add multiple task on click mulAdd button.
-we delete all task on press clear button.
+
+![](images/todopic2.png)
+
+Also make this responsive by using media query.
+
+Font library I use in this "Font Awesome".

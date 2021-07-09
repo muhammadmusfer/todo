@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <script src="./myScript.js"></script>
+   <link rel="stylesheet" href="Style.css">
+</head>    
+<body>
+    
+<div id="main">
+<div id="mainScreen">    
+    <div id="header">
+        <h1 id="heading">Todo App</h1>
+        <div id="addInput">
+            <tr>
+            <th><input type="text" placeholder="Add Your new Todo" id="inputField0"></th>
+            <th><button onclick="myfun(0)" id="addButton">+</button></th>
+            </tr>
+            <tr>
+            <th><Button id ="delAll" onclick="delAll()">Clear All</Button></th>
+            <th><Button id ="addMul" onclick="switchScreen()">ADD Multiple</Button></th>
+            </tr>
+        </div>
+    </div>
+    
+    <div id="listDiv">
+        <ul id="list"></ul>
+    </div>
+    
+
+</div>
+
+
+<div id="secondScreen" style="display: none;">
+    <input type="text" placeholder="Enter Your First Task..." id="inputField1">
+    <input type="text" placeholder="Enter Your Second Task..." id="inputField2">
+    <input type="text" placeholder="Enter Your Third Task..." id="inputField3">
+
+    <tr>
+        <th><button id="mulInputs" onClick="addAll()">ADD All</button></th>
+        <th><button id="back" onclick="back()">Back</button></th>
+    </tr>
+    
+</div>
+
+</div>
+</body>
+</html>
